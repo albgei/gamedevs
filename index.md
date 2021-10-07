@@ -13,7 +13,7 @@
 
 **Bold** and _Italic_ and `Code` text
 
-[Link](https://albgei.github.io/gamedevs/blog.md) and ![Image](src)
+[Link](https://albgei.github.io/gamedevs/blog) and ![Image](src)
 ```
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).

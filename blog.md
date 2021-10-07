@@ -1,7 +1,6 @@
 ## Welcome to gamedevs
 
-
-###first Blogentry
+### first Blogentry
 
 We want to make a 2D game using Unity.
 

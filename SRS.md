@@ -30,27 +30,27 @@
 ## 1. Introduction
 
 ### 1.1 Purpose
-This Software Requirements Specification (SRS) describes all specifications for the application "Common Playground". It includes an overview about this project and its vision, detailed information about the planned features and boundary conditions of the development process.
+This Software Requirements Specification (SRS) describes all specifications for the application "(Game Title tba) by Art+Game". It includes a comprehensive description of the expected functions of the project, as well as non-functional requirements. These are essential for establishing an understanding between software vendors and customers and minimizing the risks associated with misunderstanding customer expectations. In addition, this document will provide a basis for cost estimation and subsequent verification of the results obtained.
 
 
 ### 1.2 Scope
-The project is going to be realized as an Android App.  
+The project is going to be realized as an Pc Application.  
   
-Actors of this App can be users or moderators.  
+Actors of this App can be users.  
   
 Planned Subsystems are: 
-* Notice Board:  
-The notice board is the essential part of the user interface. Game sessions should be visualized as postings including relevant information about the session. Those should be partly standardized by a form with a free text option for specifics. The data must be stored accordingly.
-* Account System:  
-Users can create accounts so sessions can be connected to a person as well as to join requests. User data must be stored alongside the posting data.
-* Friend List and User Rating:  
-Once the account system is created there will be the option to mark users as favorites. Also users or game sessions should get a rating to counter abuse.
-* Connecting People:  
-The host of a game session has to be notified when someone wants to join their game. Both must then be able to get in touch to organize the details, so messages between the host and the guest have to be enabled. This could be done via automated emails or a custom in-app system. For this an account system is needed.
+* Open World:  
+The player will be able to move around freely in a "vast and rich" open world. During exploration of the open world the player can encounter different enemies
+and allies aswell as various main- and sidequests.
+* Quest System:
+Tracks the progress of the quest progression and auto-generates repeatables.
 * Storing Data:  
-User data for accounts and possibly profiles has to be stored. Also the game sessions have to be stored as datasets containing the form contents and possibly contact data. The data storage will form the foundation for the visualization, account system and the search feature.
-* Finding your Game:  
-We need a tag system so everyone looking to join a game can search for the kind of games they are interested in. Possibly other aspects can be searchable, such as place or date. Tags must be stored and a search function developed. 
+User data for accounts and possibly profiles must be stored. In addition, the game session must be stored as a data set containing form content and possible contact data. Data storage will form the basis of visualization, account systems and search functions.
+* Progression System:  
+According to your level ingame, the enemys will get stronger and harder to beat. This way it can be ensured that the start will not be too hard and you dont
+just steamroll the endgame.
+* Character Development System:
+During the game the player will be able to level up and improve their characters abilitys and statistics.
 
 ### 1.3 Definitions, Acronyms and Abbreviations
 | Abbrevation | Explanation                            |
@@ -58,7 +58,7 @@ We need a tag system so everyone looking to join a game can search for the kind 
 | SRS         | Software Requirements Specification    |
 | UC          | Use Case                               |
 | n/a         | not applicable                         |
-| tbd         | to be determined                       |
+| tba         | to be announced	                       |
 | UCD         | overall Use Case Diagram               |
 | FAQ         | Frequently asked Questions             |
 
@@ -66,17 +66,18 @@ We need a tag system so everyone looking to join a game can search for the kind 
 
 | Title                                                              | Date       | Publishing organization   |
 | -------------------------------------------------------------------|:----------:| ------------------------- |
-| [Common Playground Blog](http://commonplayground.wordpress.com)    | 18.10.2018 | Common Playground Team    |
-| [GitHub](https://github.com/nilskre/CommonPlayground)              | 18.10.2018 | Common Playground Team    |
+| [Art+Game Blog](https://github.com/albgei/gamedevs/index)          | 21.10.2021 | Art+Game Team    	      |
+| [GitHub](https://github.com/albgei/gamedevs)		             | 21.10.2021 | Art+Game Team   	      |
 
 
 ### 1.5 Overview
-The following chapter provides an overview of this project with vision and Overall Use Case Diagram. The third chapter (Requirements Specification) delivers more details about the specific requirements in terms of functionality, usability and design parameters. Finally there is a chapter with supporting information. 
+The next chapter outlines the project with a vision and Overall Use Case Diagram. Chapter 3 (Requirements Specification) provides more detailed information about specific requirements in terms of functionality, usability, and design parameters. The last chapter provides supporting information. 
     
 ## 2. Overall Description
 
 ### 2.1 Vision
-Inspired by carpool coordination services like ‘BlaBlaCar’ or ‘Mitfahrzentrale’ we want to build an application to coordinate game sessions. We plan to create a platform for people who are looking for other people to play games with. Covering online multiplayer games, tabletop, pen and paper or regular board games we want to provide a kind of bulletin board where people can state what they want to play, when and where they want to do it and how many people they are looking for. Others can then react to the postings and virtually join the play session to be connected by us so everyone can coordinate the actual play session together on a Common Playground.
+Inspired by games like 'The Legend of Zelda', 'The Elder Scrolls' and 'Heroes of Hammerwatch' we aim to create a top view game with several
+quests and a free to explore open world with some instances. Our ambition is to create a compelling and fun gaming experience for our players.
 
 ### 2.2 Use Case Diagram
 

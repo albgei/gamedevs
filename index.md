@@ -14,3 +14,5 @@
 # other documents
 
 - [SRS](https://albgei.github.io/gamedevs/SRS)
+
+- [User feedback](https://albgei.github.io/gamedevs/feedack)

@@ -11,3 +11,6 @@
 - [blog-2021-10-21](https://albgei.github.io/gamedevs/blog-2021-10-21)
 
 
+# other documents
+
+- [SRS](https://albgei.github.io/gamedevs/SRS)

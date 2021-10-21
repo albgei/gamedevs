@@ -276,6 +276,7 @@ The Team Members are:
 - Beraat Tasdelen
 - Albert Geisbauer
 - Eduard-Mihai Badacin
+
 <!-- Picture-Link definitions: -->
 [OUCD]: https://github.com/IB-KA/CommonPlayground/blob/master/UseCaseDiagramCP.png "Overall Use Case Diagram"
 

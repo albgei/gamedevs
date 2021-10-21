@@ -90,31 +90,26 @@ quests and a free to explore open world with some instances. Our ambition is to 
 The technology we use is:
 
 Backend:
--Gradle and Springboot
--H2 Database
+-Unity Engine
 
 Frontend:
--Android with Java and XML
+-Unity Engine
 
 IDE:
--IntelliJ and Android Studio
+-Unity, Visual Studio (Code)
 
 Project Management:
 -YouTrack
 -GitHub
--Microsoft Teams
+-Discord
 
 Deployment:
--Travis CI
--Docker and Heroku
+-Unity
 
 Testing:
--Cucumber
--Espresso
--JUnit
--Codacy
--CodeMR
--RestAssured
+-Unity
+-Unity Test Framework
+-Integrated in Visual Studio
 
 ## 3. Specific Requirements
 
@@ -275,13 +270,12 @@ The logo is licensed to the Common Playground Team and is only allowed to use fo
 The development will follow the common clean code standards and naming conventions. Also we will create a definition of d which will be added here as soon as its complete.
 
 ## 4. Supporting Information
-For any further information you can contact the Common Playground Team or check our [Common Playground Blog](http://commonplayground.wordpress.com). 
+For any further information you can contact the Art+Game Team or check our [Art+Game Blog](https://github.com/albgei/gamedevs/index). 
 The Team Members are:
-- Celina Adam
-- Inga Batton
-- Nils Krehl 
-- Denis Reibel
-
+- Danilo Mischke
+- Beraat Tasdelen
+- Albert Geisbauer
+- Eduard-Mihai Badacin
 <!-- Picture-Link definitions: -->
 [OUCD]: https://github.com/IB-KA/CommonPlayground/blob/master/UseCaseDiagramCP.png "Overall Use Case Diagram"
 

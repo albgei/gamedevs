@@ -1,0 +1,53 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><element><id>UMLPackage</id><coordinates><x>130</x><y>40</y><w>580</w><h>410</h></coordinates><panel_attributes>Game
+--
+bg=green</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLActor</id><coordinates><x>30</x><y>220</y><w>60</w><h>110</h></coordinates><panel_attributes>Player</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>140</x><y>70</y><w>150</w><h>230</h></coordinates><panel_attributes>Non-Static Entity
+--
+bg=white</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>150</x><y>100</y><w>130</w><h>40</h></coordinates><panel_attributes>Movement</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLActor</id><coordinates><x>310</x><y>100</y><w>60</w><h>110</h></coordinates><panel_attributes>NPC</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>150</x><y>150</y><w>130</w><h>40</h></coordinates><panel_attributes>Entering Room</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>150</x><y>200</y><w>130</w><h>40</h></coordinates><panel_attributes>Interact with Static</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>300</x><y>210</y><w>150</w><h>230</h></coordinates><panel_attributes>Non-Entity
+--
+bg=white</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>550</x><y>70</y><w>150</w><h>370</h></coordinates><panel_attributes>Static Entity
+--
+bg=white</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLActor</id><coordinates><x>470</x><y>340</y><w>60</w><h>110</h></coordinates><panel_attributes>Maker</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>310</x><y>240</y><w>130</w><h>40</h></coordinates><panel_attributes>Create Quest</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>390</x><y>70</y><w>150</w><h>130</h></coordinates><panel_attributes>NPC-Specific
+--
+bg=white</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>400</x><y>100</y><w>130</w><h>40</h></coordinates><panel_attributes>Pathfinding</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>400</x><y>150</y><w>130</w><h>40</h></coordinates><panel_attributes>Decision Making</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>140</x><y>310</y><w>150</w><h>130</h></coordinates><panel_attributes>Player-Specific
+--
+bg=white</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>150</x><y>340</y><w>130</w><h>40</h></coordinates><panel_attributes>Interact with NPC</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>150</x><y>390</y><w>130</w><h>40</h></coordinates><panel_attributes>Progression System</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>100</x><y>120</y><w>70</w><h>40</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;20;50;20</additional_attributes></element><element><id>Relation</id><coordinates><x>270</x><y>120</y><w>70</w><h>40</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;20;50;20</additional_attributes></element><element><id>Relation</id><coordinates><x>100</x><y>360</y><w>70</w><h>40</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;20;50;20</additional_attributes></element><element><id>Relation</id><coordinates><x>350</x><y>120</y><w>70</w><h>40</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;20;50;20</additional_attributes></element><element><id>Relation</id><coordinates><x>60</x><y>240</y><w>70</w><h>40</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;20;50;20</additional_attributes></element><element><id>Relation</id><coordinates><x>100</x><y>130</y><w>30</w><h>270</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;10;10;250</additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>560</x><y>100</y><w>130</w><h>50</h></coordinates><panel_attributes>Allow / Block 
+Movement</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>150</x><y>250</y><w>130</w><h>40</h></coordinates><panel_attributes>Attacking and Death</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>310</x><y>290</y><w>130</w><h>40</h></coordinates><panel_attributes>Create Room</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>310</x><y>340</y><w>130</w><h>40</h></coordinates><panel_attributes>Create NPC</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>310</x><y>390</y><w>130</w><h>40</h></coordinates><panel_attributes>Create Static</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>560</x><y>170</y><w>130</w><h>50</h></coordinates><panel_attributes>Connect Rooms</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>560</x><y>240</y><w>130</w><h>50</h></coordinates><panel_attributes>Damage Non-Static</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>560</x><y>310</y><w>130</w><h>50</h></coordinates><panel_attributes>Force Movement</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>560</x><y>380</y><w>130</w><h>50</h></coordinates><panel_attributes>Change Position</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>430</x><y>360</y><w>70</w><h>40</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;20;50;20</additional_attributes></element><element><id>UMLNote</id><coordinates><x>130</x><y>460</y><w>190</w><h>170</h></coordinates><panel_attributes>The Game differenciates between 
+entity and non-entity.
+--
+An entity is something that 
+exists within the game world, 
+like the player, NPCs or the world.
+--
+A non-entity is something that 
+does not exist within the world,
+like quests.
+bg=orange
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>330</x><y>460</y><w>200</w><h>170</h></coordinates><panel_attributes>Entities are also seperated into 
+static and non-static.
+--
+Static entities are part of the world.
+A static changes the way the non-
+static interact with the environment.
+Examples are traps, doors, chests.
+--
+The player and NPCs are non-static.
+They can move around, enter rooms,
+interact with static and attack others.
+They can also die unlike static.
+bg=orange
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>540</x><y>460</y><w>170</w><h>170</h></coordinates><panel_attributes>Finally the player and the NPC
+have additional functionalites.
+--
+The player can interact with 
+NPCs and can also get
+stronger after accomplishing
+quests or fighting.
+--
+NPCs need to be controlled by
+AI and therefore require path-
+finding and decision making.
+bg=orange
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLActor</id><coordinates><x>470</x><y>230</y><w>60</w><h>110</h></coordinates><panel_attributes>Static</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>510</x><y>240</y><w>70</w><h>40</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;20;50;20</additional_attributes></element></diagram>

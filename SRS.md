@@ -81,10 +81,7 @@ quests and a free to explore open world with some instances. Our ambition is to 
 
 ### 2.2 Use Case Diagram
 
-![OUCD](https://github.com/IB-KA/CommonPlayground/blob/master/UseCaseDiagramCP.png)
-
-- Green: Planned till end of december
-- Yellow: Planned till end of june
+![UCD](https://albgei.github.io/gamedevs/UCD.PNG)
 
 ### 2.3 Technology Stack
 The technology we use is:

@@ -1,5 +1,4 @@
-# 1 Use-Case Name
-Player Movement
+# 1 Player Movement
 
 ## 1.1 Brief Description
 

@@ -1,11 +1,12 @@
 # 1 World Interaction
 
 ## 1.1 Brief Description
-
+Allows the player to interact with interactables which implement the interactable interface.
 
 # 2 Flow of Events
 ## 2.1 Basic Flow
-
+- Player presses activation button
+- if interactable infront of Player, trigger interaction
 
 ### 2.1.1 Activity Diagram
 ![Player Movement Activity Diagram](/UCs/UC2%20Activity%20Diagram.png)
@@ -30,9 +31,3 @@ TODO
  
 # 6 Extension Points
 (n/a)
-
-
-
-- [SRS](https://albgei.github.io/gamedevs/SRS)
-
-- [back](https://albgei.github.io/gamedevs/index)

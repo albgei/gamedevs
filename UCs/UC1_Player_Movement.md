@@ -1,7 +1,7 @@
 # 1 Player Movement
 
 ## 1.1 Brief Description
-
+Allows the player to move in one of four directions based on the button pressed.
 
 # 2 Flow of Events
 ## 2.1 Basic Flow

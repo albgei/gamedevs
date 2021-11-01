@@ -9,10 +9,10 @@ Allows the player to interact with interactables which implement the interactabl
 - if interactable infront of Player, trigger interaction
 
 ### 2.1.1 Activity Diagram
-![Player Movement Activity Diagram](/UCs/UC2%20Activity%20Diagram.png)
+![Player Movement Activity Diagram](https://albgei.github.io/gamedevs/UCs/UC2%20Activity%20Diagram.png)
 
 ### 2.1.2 Mock-up
-![Player Movement Mock-up](/UCs/UC2%20Mark-up.jpg)
+![Player Movement Mock-up](https://albgei.github.io/gamedevs/UCs/UC2%20Mark-up.jpg)
 
 ### 2.1.3 Narrative
 TODO

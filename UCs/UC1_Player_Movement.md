@@ -8,10 +8,10 @@ Allows the player to move in one of four directions based on the button pressed.
 
 
 ### 2.1.1 Activity Diagram
-![Player Movement Activity Diagram](/UCs/UC1%20Activity%20Diagram.png)
+![Player Movement Activity Diagram](https://albgei.github.io/gamedevs/UCs/UC1%20Activity%20Diagram.png)
 
 ### 2.1.2 Mock-up
-![Player Movement Mock-up](/UCs/UC1%20Mark-up.jpg)
+![Player Movement Mock-up](https://albgei.github.io/gamedevs/UCs/UC1%20Mark-up.jpg)
 
 ### 2.1.3 Narrative
 TODO

@@ -32,7 +32,7 @@ TODO
 # 6 Extension Points
 (n/a)
 
-- [back](https://albgei.github.io/gamedevs/index)
+- [back](https://albgei.github.io/gamedevs/blog-2021-10-28)
 
 
 

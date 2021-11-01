@@ -4,11 +4,13 @@
 # blogs
 
 
-- [blog-2021-10-07](https://albgei.github.io/gamedevs/blog-2021-10-07)
+- [Week 1](https://albgei.github.io/gamedevs/blog-2021-10-07)
 
-- [blog-2021-10-14](https://albgei.github.io/gamedevs/blog-2021-10-14)
+- [Week 2](https://albgei.github.io/gamedevs/blog-2021-10-14)
 
-- [blog-2021-10-21](https://albgei.github.io/gamedevs/blog-2021-10-21)
+- [Week 3](https://albgei.github.io/gamedevs/blog-2021-10-21)
+
+- [Week 4](https://albgei.github.io/gamedevs/blog-2021-10-28)
 
 
 # other documents

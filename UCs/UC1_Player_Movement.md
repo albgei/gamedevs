@@ -5,7 +5,8 @@ Allows the player to move in one of four directions based on the button pressed.
 
 # 2 Flow of Events
 ## 2.1 Basic Flow
-
+- Player presses a key
+- if key is one of [WASD], move to corresponding direction
 
 ### 2.1.1 Activity Diagram
 ![Player Movement Activity Diagram](https://albgei.github.io/gamedevs/UCs/UC1%20Activity%20Diagram.png)

@@ -12,6 +12,8 @@
 
 - [Week 4](https://albgei.github.io/gamedevs/blog-2021-10-28)
 
+- [Week 5](https://albgei.github.io/gamedevs/blog-2021-11-04)
+
 
 # other documents
 

@@ -15,7 +15,37 @@ Allows the player to interact with interactables which implement the interactabl
 ![Player Movement Mock-up](https://albgei.github.io/gamedevs/UCs/UC2%20Mark-up.jpg)
 
 ### 2.1.3 Narrative
-TODO
+
+```gherkin
+@player @interaction
+Feature: interact with a Interactable
+  Background:
+    Given I am facing direction
+
+  Scenario: Interact with interactable
+    Given   Interactable is in direction
+    And     Interactable is within reach
+    When    Interaction button is pressed
+    Then    Trigger interaction event
+
+  Scenario: Interactable out of reach
+    Given   Interactable is in direction
+    And     Interactable is out of reach
+    When    Interaction button is pressed
+    Then    nothing
+
+  Scenario: Interactable is not in direction
+    Given   Interactable is not in direction
+    And     Interactable is within reach
+    When    Interaction button is pressed
+    Then    nothing
+
+  Scenario: Interactable is somewhere else
+    Given   Interactable is not in direction
+    And     Interactable is out of reach
+    When    Interaction button is pressed
+    Then    nothing
+```
 
 ## 2.2 Alternative Flows
 (n/a)

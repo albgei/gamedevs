@@ -1,7 +1,7 @@
 ## Welcome to gamedevs
 
 
-# blogs
+# Blogs
 
 
 - [Week 1](https://albgei.github.io/gamedevs/blog-2021-10-07)
@@ -18,7 +18,7 @@
 
 
 
-# other documents
+# Other documents
 
 - [SRS](https://albgei.github.io/gamedevs/SRS)
 

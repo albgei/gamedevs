@@ -18,6 +18,9 @@
 
 - [Week 7](https://albgei.github.io/gamedevs/blog-2021-11-18)
 
+- [Week 8](https://albgei.github.io/gamedevs/blog-2021-11-25)
+
+
 # Other documents
 
 - [SRS](https://albgei.github.io/gamedevs/SRS)

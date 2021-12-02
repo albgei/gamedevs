@@ -26,4 +26,6 @@
 
 - [SRS](https://albgei.github.io/gamedevs/SRS)
 
+- [SAD](https://albgei.github.io/gamedevs/SAD)
+
 - [User feedback](https://albgei.github.io/gamedevs/feedack)

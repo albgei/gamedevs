@@ -122,3 +122,13 @@ N/A
 ## 11. Quality
 
 Unity recommends the component architecture to be used in the development of an application. Therefore the quality is at its best choosing this architecture.
+
+- [back](https://albgei.github.io/gamedevs/blog-2021-12-02)
+
+<script src="https://utteranc.es/client.js"
+        repo="albgei/gamedevs"
+        issue-term="pathname"
+        label="commentary_"
+        theme="github-dark"
+        crossorigin="anonymous"
+        async>

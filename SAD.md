@@ -69,12 +69,6 @@ N/A
 
 ## 8. Implementation View
 
-### 8.1 Overview
-
-N/A
-
-### 8.2 Layers
-
 N/A
 
 ## 9. Data View

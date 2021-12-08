@@ -1,30 +1,5 @@
 # Art+Game - Software Architecture Documentation
 
-## Table of Contents
-
-- [Art+Game - Software Architecture Documentation](#Art+Game --software-architecture-documentation)
-  - [Table of Contents](#table-of-contents)
-  - [1. Introduction](#1-introduction)
-    - [1.1 Purpose](#11-purpose)
-    - [1.2 Scope](#12-scope)
-    - [1.3 Definitions, Acronyms, and Abbreviations](#13-definitions-acronyms-and-abbreviations)
-    - [1.4 References](#14-references)
-    - [1.5 Overview](#15-overview)
-  - [2. Architectural Representation](#2-architectural-representation)
-  - [3. Architectural Goals and Constraints](#3-architectural-goals-and-constraints)
-  - [4. Use-Case View](#4-use-case-view)
-  - [5. Logical View](#5-logical-view)
-    - [5.1 Overview](#51-overview)
-    - [5.2 Architecturally Significant Design Packages](#52-architecturally-significant-design-packages)
-  - [6. Process View](#6-process-view)
-  - [7. Deployment View](#7-deployment-view)
-  - [8. Implementation View](#8-implementation-view)
-    - [8.1 Overview](#81-overview)
-    - [8.2 Layers](#82-layers)
-  - [9. Data View](#9-data-view)
-  - [10. Size and Performance](#10-size-and-performance)
-  - [11. Quality](#11-quality)
-
 ## 1. Introduction
 
 ### 1.1 Purpose
@@ -33,7 +8,7 @@ This document provides a comprehensive architectural overview of the system, by 
 
 ### 1.2 Scope
 
-This document describes the architecture of the GyroGame Project.
+This document describes the architecture of the Art+Game Project.
 
 ### 1.3 Definitions, Acronyms, and Abbreviations
 
@@ -46,10 +21,7 @@ This document describes the architecture of the GyroGame Project.
 | **Title**                                                                                                                 |
 | -----------------------------------------------------------------------------                                             |
 | [**Art+Game Blog**](https://albgei.github.io/gamedevs/)                                                                   |
-| [**GitHub - Unity Project**](https://github.com/GyroInc/gyrogame-unity)                                                   |
-| [**GitHub - Controller Firmware**](https://github.com/GyroInc/gyrogame-hardware)                                          |
-| [**YouTrack Project Management**](https://youtrack.gyrogame.de)                                                           |
-| [**Software Requirements Specification**](https://github.com/GyroInc/gyrogame-unity/blob/master/Documentation/SRS.md)   |
+| [**Software Requirements Specification**](https://albgei.github.io/gamedevs/SRS)   |
 
 ### 1.5 Overview
 
@@ -68,15 +40,14 @@ This component-based architecture, if properly executed, allows for a very clear
 
 Below, you can find the overall use case diagram that shows all use cases the application should provide.
 
-![UCD](https://albgei.github.io/gamedevs/UCD)
-![Overall Use Case Diagram](https://github.com/GyroInc/gyrogame-unity/blob/master/Documentation/OUCD_rev2.svg)
+![UCD](https://albgei.github.io/gamedevs/UCD.PNG)
 
 Here you can find the various use case specification documents:
 
-- [Use Case: Player Movement](https://github.com/GyroInc/gyrogame-unity/blob/master/Documentation/UseCases/PlayerMovement/UC_PlayerMovement.md)
-- [Use Case: Pause Menu](https://github.com/GyroInc/gyrogame-unity/blob/master/Documentation/UseCases/PauseMenu/UC_PauseMenu.md)
-- [Use Case: Connect Control Cube](https://github.com/GyroInc/gyrogame-unity/blob/master/Documentation/UseCases/ConnectCube/UC_ConnectCube.md)
-- [Use Case: Rotate Obstacle](https://github.com/GyroInc/gyrogame-unity/blob/master/Documentation/UseCases/RotateObstacle/UC_RotateObstacle.md)
+- [Use Case 1: Player Movement](https://albgei.github.io/gamedevs/UCs/UC1_Player_Movement)
+- [Use Case 2: World Interaction](https://albgei.github.io/gamedevs/UCs/UC2_World_Interaction)
+- [Use Case 3: Generating NPCs](https://albgei.github.io/gamedevs/UCs/UC3_Generating_NPCs)
+- [Use Case 4: NPC Interaction](https://albgei.github.io/gamedevs/UCs/UC4_NPC_Interaction)
 
 ## 5. Logical View
 
@@ -86,7 +57,7 @@ Here you can find the various use case specification documents:
 
 ### 5.2 Architecturally Significant Design Packages
 
-![Class Diagram](https://github.com/GyroInc/gyrogame-unity/blob/master/Documentation/images/ClassDiagram_labeled.png)
+![Class Diagram]()
 
 ## 6. Process View
 
@@ -94,7 +65,7 @@ N/A
 
 ## 7. Deployment View
 
-![Deployment View](https://github.com/GyroInc/gyrogame-unity/blob/master/Documentation/images/DeploymentView.svg)
+![Deployment View]()
 
 ## 8. Implementation View
 

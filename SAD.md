@@ -64,8 +64,8 @@ Here you can find the various use case specification documents:
 N/A
 
 ## 7. Deployment View
-
-![Deployment View]()
+This is our deployment diagram. The client computer will have the game binaries and game files such as save-games or highscores deployed on it.
+![Deployment View](https://albgei.github.io/gamedevs/Pictures/Deployment.PNG)
 
 ## 8. Implementation View
 

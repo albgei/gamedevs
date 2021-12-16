@@ -35,6 +35,7 @@ Unity utilizes what's called component architecture. Every game object can be de
 ## 3. Architectural Goals and Constraints
 
 This component-based architecture, if properly executed, allows for a very clear and easy handling with functionality, that every object can be deployed with. It also allows for good scalability of the games scope with components being reusable for many different objects and game events.
+A good guide was provided by unity: https://unity.com/how-to/how-architect-code-your-project-scales
 
 ## 4. Use-Case View
 
@@ -52,12 +53,17 @@ Here you can find the various use case specification documents:
 ## 5. Logical View
 
 ### 5.1 Overview
-
-![Component Architecture Logical View](https://github.com/GyroInc/gyrogame-unity/blob/master/Documentation/images/ComponentLogicalView.svg)
+Instead of enfocing a MVC architecture onto our game, we decided against it.
+There are multiple reasons for that:
+- Unity already handles most if not all of the visuals within its editor, using the Animator with .anim files for animations for example
+- Game object can possess any amount of custom properties similar to models
+- Any logic for any game object is contained within the corresponding script which controlls the game object
+![Unity approach](https://albgei.github.io/gamedevs/Pictures/software-architecture.webp)
 
 ### 5.2 Architecturally Significant Design Packages
+As we already said, there isn't a clear cut between MVC in the classes as the Model and controller have blended together and the view is handled elsewhere.
 
-![Class Diagram]()
+![Class Diagram](https://albgei.github.io/gamedevs/Pictures/Class%20Diagram.PNG)
 
 ## 6. Process View
 
@@ -65,6 +71,7 @@ N/A
 
 ## 7. Deployment View
 This is our deployment diagram. The client computer will have the game binaries and game files such as save-games or highscores deployed on it.
+
 ![Deployment View](https://albgei.github.io/gamedevs/Pictures/Deployment.PNG)
 
 ## 8. Implementation View

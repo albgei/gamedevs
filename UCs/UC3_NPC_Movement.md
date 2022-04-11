@@ -16,7 +16,7 @@ Allows the NPC (Non-player character) to move in one of four directions based on
 
 ### 2.1.3 Narrative
 ```gherkin
-@NPC @movement
+@npc @movement
 Feature: Moving based on target location
   Background:
      Given  I (NPC) am in a room

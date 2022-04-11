@@ -1,10 +1,13 @@
 # 1 Character Progression
 
 ## 1.1 Brief Description
+Allows the player to aquire experience points and level up. 
 
 # 2 Flow of Events
 ## 2.1 Basic Flow
-- 
+- Player does something
+- Doing so gives the player experience points
+- Given enough experience points, the player levels up
 
 ### 2.1.1 Activity Diagram
 ![NPC Interaction Activity Diagram](https://albgei.github.io/gamedevs/UCs/UC5%20Activity%20Diagram.png)
@@ -14,54 +17,57 @@
 
 ### 2.1.3 Narrative
 ```gherkin
-@player @movement
-Feature: Moving based on user input
+@player @progression
+Feature: Acquiring experience points and leveling up.
   Background:
      Given  I am in a room
      And    Game is active
-     And    There is no obstacle
+     And    I am alive
+     
+  Scenario: Kill NPC
+     Given  I damage NPC
+     And    NPC dies
+     Then   I will receive experience points
+     
+  Scenario: Finish Quest
+     Given  I finish a quest
+     And    Quest was successful
+     Then   I will receive experience points
+     
+  Scenario: Enter new area
+     Given  I enter a area / room
+     And    I have not entered the area / room before
+     Then   I will receive experience points
 
-  Scenario: not moving
-     Given I am at position
-     When  I press noting
-     Then  I am at position
+  Scenario: Enough experience points for level up
+     Given  I have received experience points
+     And    I have enough experience points for level up
+     Then   I will level up
 
-  Scenario: Moving up
-     Given I am at position
-     When  I press w
-     Then  I am at newPosition.z > position.z
-
-  Scenario: Moving left
-     Given I am at position
-     When  I press a
-     Then  I am at newPosition.x < position.x
-
-  Scenario: Moving down
-     Given I am at position
-     When  I press s
-     Then  I am at newPosition.z < position.z
-
-  Scenario: Moving right
-     Given I am at position
-     When  I press d
-     Then  I am at newPosition.x > position.x
-
-  Scenario Outline: Moving from start to position
-    Given I am at <start>
-    When  I press <key>
-    And   I press for <duration>
-    Then  I am at <position>
+  Scenario: Not enough experience points for level up
+     Given  I have received experience points
+     And    I have not enough experience points for level up
+     Then   I will not level up
+     
+  Scenario Outline: Leveling up
+    Given I have <experience> points
+    And   I am <level>
+    When  I receive experience <points>
+    And   I have enough experience points <needed>
+    Then  I adjust my <new experience> points
+    And   I increment my <new level>
 
     Examples: 
-      | start | key | duration | position |
-      | 0,0,0 |  w  |    00    |   0,0,0  |
-      | 0,0,0 |  a  |    00    |   0,0,0  |
-      | 0,0,0 |  s  |    00    |   0,0,0  |
-      | 0,0,0 |  d  |    00    |   0,0,0  |
-      | 0,0,0 |  w  |    05    |   0,0,10 |
-      | 0,0,0 |  a  |    05    | -10,0,0  |
-      | 0,0,0 |  s  |    05    |   0,0,-10|
-      | 0,0,0 |  d  |    05    |  10,0,0  |
+      | experience | points | needed | level | new experience | new level |
+      |     000    |   00   |  020   |   1   |      000       |     1     |
+      |     000    |  -99   |  020   |   1   |      000       |     1     |
+      |     015    |  -99   |  020   |   1   |      015       |     1     |
+      |     000    |   05   |  020   |   1   |      005       |     1     |
+      |     015    |   00   |  020   |   1   |      015       |     1     |
+      |     015    |   05   |  020   |   1   |      000       |     2     |
+      |     015    |   15   |  020   |   1   |      010       |     2     |
+      |     020    |   00   |  020   |   1   |      000       |     2     |
+      |     020    |   05   |  020   |   1   |      005       |     2     |
 ```
 
 ## 2.2 Alternative Flows

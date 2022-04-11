@@ -1,10 +1,11 @@
 # 1 NPC Interaction
 
 ## 1.1 Brief Description
+Allows the NPC to interact with interactables which implement the interactable interface.
 
 # 2 Flow of Events
 ## 2.1 Basic Flow
-- 
+- if interactable infront of NPC, trigger interaction
 
 ### 2.1.1 Activity Diagram
 ![NPC Interaction Activity Diagram](https://albgei.github.io/gamedevs/UCs/UC4%20Activity%20Diagram.png)
@@ -14,54 +15,31 @@
 
 ### 2.1.3 Narrative
 ```gherkin
-@player @movement
-Feature: Moving based on user input
+@npc @interaction
+Feature: interact with a Interactable
   Background:
-     Given  I am in a room
-     And    Game is active
-     And    There is no obstacle
+    Given   I am facing direction
+    And     Interaction is desired
 
-  Scenario: not moving
-     Given I am at position
-     When  I press noting
-     Then  I am at position
+  Scenario: Interact with interactable
+    Given   Interactable is in direction
+    And     Interactable is within reach
+    Then    Trigger interaction event
 
-  Scenario: Moving up
-     Given I am at position
-     When  I press w
-     Then  I am at newPosition.z > position.z
+  Scenario: Interactable out of reach
+    Given   Interactable is in direction
+    And     Interactable is out of reach
+    Then    nothing
 
-  Scenario: Moving left
-     Given I am at position
-     When  I press a
-     Then  I am at newPosition.x < position.x
+  Scenario: Interactable is not in direction
+    Given   Interactable is not in direction
+    And     Interactable is within reach
+    Then    nothing
 
-  Scenario: Moving down
-     Given I am at position
-     When  I press s
-     Then  I am at newPosition.z < position.z
-
-  Scenario: Moving right
-     Given I am at position
-     When  I press d
-     Then  I am at newPosition.x > position.x
-
-  Scenario Outline: Moving from start to position
-    Given I am at <start>
-    When  I press <key>
-    And   I press for <duration>
-    Then  I am at <position>
-
-    Examples: 
-      | start | key | duration | position |
-      | 0,0,0 |  w  |    00    |   0,0,0  |
-      | 0,0,0 |  a  |    00    |   0,0,0  |
-      | 0,0,0 |  s  |    00    |   0,0,0  |
-      | 0,0,0 |  d  |    00    |   0,0,0  |
-      | 0,0,0 |  w  |    05    |   0,0,10 |
-      | 0,0,0 |  a  |    05    | -10,0,0  |
-      | 0,0,0 |  s  |    05    |   0,0,-10|
-      | 0,0,0 |  d  |    05    |  10,0,0  |
+  Scenario: Interactable is somewhere else
+    Given   Interactable is not in direction
+    And     Interactable is out of reach
+    Then    nothing
 ```
 
 ## 2.2 Alternative Flows

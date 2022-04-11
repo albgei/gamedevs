@@ -7,10 +7,10 @@
 - 
 
 ### 2.1.1 Activity Diagram
-![NPC Interaction Activity Diagram](https://albgei.github.io/gamedevs/UCs/UC4%20Activity%20Diagram.png)
+![NPC Interaction Activity Diagram](https://albgei.github.io/gamedevs/UCs/UC5%20Activity%20Diagram.png)
 
 ### 2.1.2 Mock-up
-![NPC Interaction Mock-up](https://albgei.github.io/gamedevs/UCs/UC4%20Mark-up.jpg)
+![NPC Interaction Mock-up](https://albgei.github.io/gamedevs/UCs/UC5%20Mark-up.jpg)
 
 ### 2.1.3 Narrative
 ```gherkin

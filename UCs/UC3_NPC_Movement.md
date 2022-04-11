@@ -12,7 +12,7 @@ Allows the NPC (Non-player character) to move in one of four directions based on
 ![NPC Movement Activity Diagram](https://albgei.github.io/gamedevs/UCs/UC3%20Activity%20Diagram.png)
 
 ### 2.1.2 Mock-up
-![Player Movement Mock-up](https://albgei.github.io/gamedevs/UCs/UC3%20Mark-up.jpg)
+![NPC Movement Mock-up](https://albgei.github.io/gamedevs/UCs/UC3%20Mark-up.jpg)
 
 ### 2.1.3 Narrative
 ```gherkin

@@ -1,8 +1,7 @@
 ## Welcome to gamedevs
 
 
-# Blogs
-
+# Blogs Semester 3
 
 - [Week 1](https://albgei.github.io/gamedevs/blog-2021-10-07)
 
@@ -23,6 +22,12 @@
 - [Week 9](https://albgei.github.io/gamedevs/blog-2021-12-02)
 
 - [Week 10](https://albgei.github.io/gamedevs/blog-2021-12-09)
+
+
+# Blogs Semester 4
+
+- [Week 1](https://albgei.github.io/gamedevs/blog-2022-04-07)
+
 
 # Other documents
 

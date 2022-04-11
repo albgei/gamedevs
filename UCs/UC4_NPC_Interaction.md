@@ -16,9 +16,9 @@ Allows the NPC to interact with interactables which implement the interactable i
 ### 2.1.3 Narrative
 ```gherkin
 @npc @interaction
-Feature: interact with a Interactable
+Feature: Interact with a Interactable
   Background:
-    Given   I am facing direction
+    Given   I (NPC) am facing direction
     And     Interaction is desired
 
   Scenario: Interact with interactable

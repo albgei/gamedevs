@@ -1,5 +1,6 @@
 ## Welcome to gamedevs
 
+We make very cool game :)
 
 # Blogs Semester 3
 

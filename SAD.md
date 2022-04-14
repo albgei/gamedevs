@@ -41,7 +41,7 @@ A good guide was provided by unity: https://unity.com/how-to/how-architect-code-
 
 Below, you can find the overall use case diagram that shows all use cases the application should provide.
 
-![UCD](https://albgei.github.io/gamedevs/UCD.PNG)
+![UCD](https://albgei.github.io/gamedevs/UCD%202.png)
 
 Here you can find the various use case specification documents:
 

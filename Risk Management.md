@@ -9,6 +9,10 @@
 | Project progress not monitored | Lack of proper time & progress tracking. | 80%-100% | 4 | 3.2-4.0 🟥 | Tasks need to be properly defined along with deadlines and responsabilities. | Danilo |
 |  |  |  |  |  |  |  |
 
+- 🟩:Low risk
+- 🟨:Moderate risk
+- 🟥:High risk
+
 - [back](https://albgei.github.io/gamedevs/index)
 
 <script src="https://utteranc.es/client.js"

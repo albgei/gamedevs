@@ -81,11 +81,7 @@ quests and a free to explore open world with some instances. Our ambition is to 
 
 ### 2.2 Use Case Diagram
 
-![UCD](https://albgei.github.io/gamedevs/UCD.PNG)
-
-Until December we will have implemented the Non-Static Entities and the NPC-Specific use cases.
-
-Until June we will implement the Player-Specific use cases, the Static-Entity and Non-Entity.
+![UCD](https://albgei.github.io/gamedevs/UCD%202.png)
 
 ### 2.3 Technology Stack
 The technology we use is:

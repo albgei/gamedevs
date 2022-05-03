@@ -4,7 +4,7 @@
 ### 1.1	Purpose
 The purpose of the Iteration Test Plan is to gather all of the information necessary to plan and control the test effort for a given iteration. 
 It describes the approach to testing the software.
-This Test Plan for **PartyPlayer** supports the following objectives:
+This Test Plan for **Art+Game** supports the following objectives:
 -	Identifies the items that should be targeted by the tests.
 -	Identifies the motivation for and ideas behind the test areas to be covered.
 -	Outlines the testing approach that will be used.
@@ -24,8 +24,8 @@ This document is meant for internal use primarily.
 ### 1.5	 References
 | Reference        | 
 | ------------- |
-| [SAD](./sad.md) | 
-| [UseCases](../UseCases) |
+| [SAD](https://albgei.github.io/gamedevs/SAD) | 
+| [UseCases (Kinda)](https://albgei.github.io/gamedevs/blog-2021-12-09) |
             
 ## 2.	Evaluation Mission and Test Motivation
 ### 2.1	Background
@@ -44,15 +44,13 @@ The listing below identifies those test items (software, hardware, and supportin
 This list represents what items will be tested. 
 
 Items for Testing:
-- SpringBoot-Web Backend
-- Angular Frontend
+- Unity Testing Framework
 
 ## 4.	Outline of Planned Tests
 ### 4.1	Outline of Test Inclusions
-Testing the backend with unit tests and some e2e tests. 
-End2End testing the forntend application.
+Testing the game with EditTests and PlayTests.
 ### 4.2	Outline of Other Candidates for Potential Inclusion
-Stress Testing the application and its servers.
+Stress Testing the application.
 Findung security holes.
 ### 4.3 Outline of Test Exclusions
 n/a
@@ -61,25 +59,18 @@ n/a
 ### 5.1 Initital Test-Idea Catalogs and Other Reference Sources
 **n/a**
 ### 5.2	Testing Techniques and Types
-#### 5.2.1 SpringBoot Backend Testing
+#### 5.2.1 Game Testing
 || |
 |---|---|
-|Technique Objective  	| The backend should be started. Several request should be made to determine the correct functionality of the backend. |
-|Technique 		|  Data should be mocked. A productive capable environment (similar database technology) should be used. |
+|Technique Objective  	| Test the game. |
+|Technique 		| Data should be mocked. |
 |Oracles 		| Endpoints return the correct and expected data as well as the expected response codes. |
-|Required Tools 	| SpringBoot-Test (Unit testing & E2E testing framework), Postman (Newman) |
-|Success Criteria	| expected responses, passing tests |
-|Special Considerations	|     -          |
-
-#### 5.2.2 Angular Frontend Testing
-|| |
-|---|---|
-|Technique Objective  	| Every interaction with the frontend should function as intended. |
-|Technique 		| Unit Tests and Gherkin tests should test the technology. For testing the frontend we use a mock backend.  |
-|Oracles 		| (Fake-)Backend returns expected data, information is shown as expected |
-|Required Tools 	| Gherkin, Chai, Mocha |
+|Required Tools 	| Unity Testing Framework |
 |Success Criteria	| Expected behavior and passing tests |
 |Special Considerations	|     -          |
+
+#### 5.2.2 Fun Testing
+**n/a**
 
 #### 5.2.3 Business Cycle Testing
 **n/a**
@@ -114,35 +105,22 @@ n/a
 ## 6.	Entry and Exit Criteria
 ### 6.1	Test Plan
 #### 6.1.1	Test Plan Entry Criteria
-Pushing new commits to gitlab will trigger the GitLab CI/CD pipeline.
 #### 6.1.2	Test Plan Exit Criteria
-When all tests pass without throwing an exception.
 #### 6.1.3 Suspension and Resumption Criteria
-n/a
+**n/a**
 
 ## 7.	Deliverables
 ### 7.1	Test Evaluation Summaries
-GitLab Actions will provide console log which is printed by the appropriate testing frameworks
 ### 7.2	Reporting on Test Coverage
-Coverage returned by Istanbul
-
-Frontend:
-![](https://gitlab.com/kzynn/partyplayer-ui/badges/master/coverage.svg)
-![](https://gitlab.com/kzynn/partyplayer-ui/badges/master/pipeline.svg)
-Backend:
-![](https://gitlab.com/kzynn/partyplayer/badges/master/coverage.svg)
-![](https://gitlab.com/kzynn/partyplayer/badges/master/pipeline.svg)
-
+**n/a**
 ### 7.3	Perceived Quality Reports
-n/a
+**n/a**
 ### 7.4	Incident Logs and Change Requests
-n/a
+**n/a**
 ### 7.5	Smoke Test Suite and Supporting Test Scripts
-n/a
+**n/a**
 ### 7.6	Additional Work Products
 #### 7.6.1	Detailed Test Results
-GitLab pipeline tests
-
 #### 7.6.2	Additional Automated Functional Test Scripts
 **n/a**
 #### 7.6.3	Test Guidelines
@@ -151,7 +129,7 @@ Easy tests should be tested for functionality. Due to timing constraints,the qua
 **n/a**
 
 ## 8.	Testing Workflow
-Developers should execute tests locally before pushing source code. When pushing to branches, the tests are executed automatically.
+Developers should execute tests locally before pushing source code.
 ## 9.	Environmental Needs
 This section presents the non-human resources required for the Test Plan.
 ### 9.1	Base System Hardware
@@ -159,28 +137,24 @@ The following table sets forth the system resources for the test effort presente
 
 | Resource | Quantity | Name and Type |
 |---|---|---|
-| Production Server | 1 | API provider / Frontend provider / Database|
-| GitLab CI/CD |  | Testing, building and deploying application |
+| **n/a** | **n/a** | **n/a** |
 
 ### 9.2	Base Software Elements in the Test Environment
 The following base software elements are required in the test environment for this Test Plan.
 
 | Software Element Name | Version | Type and Other Notes |
 |---|---|---|
-| Linux | latest | Operating System |
-| NodeJS | latest | Famework |
-| MySQL | latest | Database |
+| **n/a** | **n/a** | **n/a** |
 
 ### 9.3	Productivity and Support Tools
 The following tools will be employed to support the test process for this Test Plan.
 
 | Tool Category or Type | Tool Brand Name                              |
 |-----------------------|----------------------------------------------|
-| Code Hoster           | [gitlab.com](https://gitlap.com/partyplayer/) |
-| CI Service            |  [gitlab.com](https://gitlap.com/partyplayer/) |
+| Code Hoster           | [github.com](https://github.com/albgei/gamedevs) |
 
 ### 9.4	Test Environment Configurations
-n/a 
+**n/a**
 
 ## 10.	Responsibilities, Staffing, and Training Needs
 ### 10.1	People and Roles
@@ -204,10 +178,7 @@ Human Resources
 
 | Milestone | Planned Start Date | Actual Start Date | Planned End Date | Actual End Date |
 |---|---|---|---|---|
-| Have Unit Tests | 01.04.2020 | since start of development | 4.6.2020 | 4.6.2020   |
-| 50% coverage | 12.5.2020 | 12.5.2020   | 25.05.2020   | **tbd**   |
-| Tests integrated in CI | Beginning | Beginning | Beginning | Beginning |
-| Postman Testing | 27.05.2020 | 27.05.2020 | End of semester | 25.06.2020 |
+| **n/a** | **n/a** | **n/a** | **n/a** | **n/a**   |
 
 
 ## 12.	Risks, Dependencies, Assumptions, and Constraints

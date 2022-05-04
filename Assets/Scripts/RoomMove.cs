@@ -30,6 +30,7 @@ public class RoomMove : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
+            
             cam.offset = cameraChange;
             other.transform.position += playerChange;
             if(needText)

@@ -7,6 +7,10 @@ TagManager:
   - breakable
   - enemy
   - sword
+  - goToLake
+  - goToField
+  - goToHouse1
+  - goToFieldHouse
   layers:
   - Default
   - TransparentFX

@@ -16,19 +16,34 @@ public class Enemy : MonoBehaviour
 
     public EnemyState currentState;
     public FloatValue maxHealth;
-    private float health;
+    public float health;
     public string enemyName;
     public int baseAttack;
     public float moveSpeed;
 
-    private void Start()
+    private void Awake()
     {
         health = maxHealth.initialValue;
+        Debug.Log(health);
     }
 
-    public void Knock(Rigidbody2D myRigidbody, float knockTime)
+    private void TakeDamage(float damage)
+    {
+        Debug.Log("Schaden lol mit: " + damage);
+        health -= damage;
+        Debug.Log(" und verbleidende health ist: " + health);
+        if(health <= 0)
+        {
+            Debug.Log("totototototototpo");
+
+            this.gameObject.SetActive(false);
+        }
+    }
+
+    public void Knock(Rigidbody2D myRigidbody, float knockTime, float damage)
     {
         StartCoroutine(KnockCo(myRigidbody, knockTime));
+        TakeDamage(damage);
     }
     private IEnumerator KnockCo(Rigidbody2D myRigidbody, float knockTime)
     {

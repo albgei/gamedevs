@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public enum PlayerState
 {
@@ -19,6 +20,13 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 change;
     private Animator animator;
     public Sign sign;
+    public GameObject lake;
+    public GameObject field;
+    public GameObject house1;
+    public CameraMovement movement;
+    public float health;
+    public FloatValue currentHealth;
+    public Signal playerHealthSignal;
 
     // Start is called before the first frame update
     void Start()
@@ -28,6 +36,7 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator.SetFloat("moveX", 0);
         animator.SetFloat("moveY", -1);
+        health = 3;
     }
 
     // Update is called once per frame
@@ -78,9 +87,21 @@ public class PlayerMovement : MonoBehaviour
             transform.position + change * speed * Time.fixedDeltaTime);
     }
 
-    public void Knock(float knockTime)
+
+    public void Knock(float knockTime, float damage)
     {
-        StartCoroutine(KnockCo(knockTime));
+        currentHealth.RuntimeValue -= damage;
+        playerHealthSignal.Raise();
+
+
+        if (currentHealth.RuntimeValue > 0)
+        {
+            StartCoroutine(KnockCo(knockTime));
+        }
+        else
+        {
+            this.gameObject.SetActive(false);
+        }
     }
 
     private IEnumerator KnockCo(float knockTime)
@@ -91,6 +112,35 @@ public class PlayerMovement : MonoBehaviour
             rb.velocity = Vector2.zero;
             currentState = PlayerState.idle;
             rb.velocity = Vector2.zero;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log(collision.tag);
+
+        if(collision.CompareTag("goToLake"))
+        {
+            field.SetActive(false);
+            lake.SetActive(true);
+        }else if(collision.CompareTag("goToField") || collision.CompareTag("goToFieldHouse"))
+        {
+            if(collision.CompareTag("goToFieldHouse"))
+            {
+                movement.first = true;
+                movement.room = false;
+            }
+            lake.SetActive(false);
+            field.SetActive(true);
+            house1.SetActive(false);
+
+        }
+        else if(collision.CompareTag("goToHouse1"))
+        {
+            field.SetActive(false);
+            house1.SetActive(true);
+            movement.room = true;
+            movement.first = true;
         }
     }
 }

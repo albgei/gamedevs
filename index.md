@@ -23,6 +23,7 @@ We make very cool game :)
 - [Week 3](https://albgei.github.io/gamedevs/blog-2022-04-21)
 - [Week 4](https://albgei.github.io/gamedevs/blog-2022-04-28)
 - [Week 5](https://albgei.github.io/gamedevs/blog-2022-05-05)
+- [Week 6](https://albgei.github.io/gamedevs/blog-2022-05-12)
 
 # Other documents
 

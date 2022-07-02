@@ -32,7 +32,6 @@ We make very cool game :)
 # Other documents
 
 - [SRS](https://albgei.github.io/gamedevs/SRS)
-
 - [SAD](https://albgei.github.io/gamedevs/SAD)
-
+- [Testplan](https://albgei.github.io/gamedevs/testplan)
 - [User feedback](https://albgei.github.io/gamedevs/feedack)

@@ -1,4 +1,4 @@
-# 1 Character Progression
+# 1 NPC Decision Making
 
 ## 1.1 Brief Description
 Allows the player to aquire experience points and level up. 

@@ -1,52 +1,53 @@
-@player @movement
-Feature: Moving based on user input
+@npc @movement
+Feature: Moving based on target location
   Background:
-     Given  I am in a room
+     Given  I (NPC) am in a room
      And    Game is active
      And    There is no obstacle
+     And    There is a target
 
   Scenario: not moving
      Given I am at position
-     When  I press noting
+     And   Target is gone
      Then  I am at position
 
   Scenario: Moving up
      Given I am at position
-     When  I press w
+     And   Target is above from position
      Then  I am at newPosition.z > position.z
 
   Scenario: Moving left
      Given I am at position
-     When  I press a
+     And   Target is left from position
      Then  I am at newPosition.x < position.x
 
   Scenario: Moving down
      Given I am at position
-     When  I press s
+     And   Target is below from position
      Then  I am at newPosition.z < position.z
 
   Scenario: Moving right
      Given I am at position
-     When  I press d
+     And   Target is right from position
      Then  I am at newPosition.x > position.x
 
   Scenario Outline: Moving from start to position
     Given I am at <start>
-    When  I press <key>
-    And   I press for <duration>
+    And   Target is at <location>
+    And   I move for <duration>
     Then  I am at <position>
 
     Examples: 
-      | start | key | duration | position |
-      | 0,0,0 |  w  |    00    |   0,0,0  |
-      | 0,0,0 |  a  |    00    |   0,0,0  |
-      | 0,0,0 |  s  |    00    |   0,0,0  |
-      | 0,0,0 |  d  |    00    |   0,0,0  |
-      | 0,0,0 |  w  |    05    |   0,0,10 |
-      | 0,0,0 |  a  |    05    | -10,0,0  |
-      | 0,0,0 |  s  |    05    |   0,0,-10|
-      | 0,0,0 |  d  |    05    |  10,0,0  |
-    
-    
-    
-
+      | start |  location  | duration | position |
+      | 0,0,0 |   0,0,20   |    00    |   0,0,0  |
+      | 0,0,0 | -20,0,0    |    00    |   0,0,0  |
+      | 0,0,0 |   0,0,-20  |    00    |   0,0,0  |
+      | 0,0,0 |  20,0,0    |    00    |   0,0,0  |
+      | 0,0,0 |   0,0,20   |    05    |   0,0,10 |
+      | 0,0,0 | -20,0,0    |    05    | -10,0,0  |
+      | 0,0,0 |   0,0,-20  |    05    |   0,0,-10|
+      | 0,0,0 |  20,0,0    |    05    |  10,0,0  |
+      | 0,0,0 |   0,0,20   |    15    |   0,0,20 |
+      | 0,0,0 | -20,0,0    |    15    | -20,0,0  |
+      | 0,0,0 |   0,0,-20  |    15    |   0,0,-20|
+      | 0,0,0 |  20,0,0    |    15    |  20,0,0  |

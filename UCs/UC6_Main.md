@@ -1,10 +1,12 @@
 # 1 Generating NPCs
 
 ## 1.1 Brief Description
+To generate friendly and hostile NPCs with default templates and the availability to add different capabilities for critical NPCs.
 
 # 2 Flow of Events
 ## 2.1 Basic Flow
-- 
+- Player leaves room
+- if NPC Dead, spawn NPC
 
 ### 2.1.1 Activity Diagram
 ![Generating NPC Activity Diagram](https://albgei.github.io/gamedevs/UCs/UC6%20Activity%20Diagram.png)

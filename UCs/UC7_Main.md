@@ -16,54 +16,38 @@ Entities will have Health, that decrements with each attack received. When Healt
 
 ### 2.1.3 Narrative
 ```gherkin
-@player @movement
-Feature: Moving based on user input
+@player @interaction
+Feature: attack interactable
   Background:
-     Given  I am in a room
-     And    Game is active
-     And    There is no obstacle
+    Given   I am facing direction
+    And     Interaction button is pressed
 
-  Scenario: not moving
-     Given I am at position
-     When  I press noting
-     Then  I am at position
+  Scenario: Attack enemy
+    Given   Enemy is in direction
+    And     Enemy is within reach
+    Then    Trigger attack event
 
-  Scenario: Moving up
-     Given I am at position
-     When  I press w
-     Then  I am at newPosition.z > position.z
+  Scenario: Enemy out of reach
+    Given   Enemy is in direction
+    And     Enemy is out of reach
+    Then    nothing
 
-  Scenario: Moving left
-     Given I am at position
-     When  I press a
-     Then  I am at newPosition.x < position.x
+  Scenario: Enemy is not in direction
+    Given   Enemy is not in direction
+    And     Enemy is within reach
+    Then    nothing
 
-  Scenario: Moving down
-     Given I am at position
-     When  I press s
-     Then  I am at newPosition.z < position.z
+  Scenario: Enemy is somewhere else
+    Given   Enemy is not in direction
+    And     Enemy is out of reach
+    Then    nothing
+    
+  Scenario: Attack enemy death
+    Given   Enemy is in direction
+    And     Enemy is within reach
+    And     Enemy.health <= attack.damage 
+    Then    Trigger attack event
 
-  Scenario: Moving right
-     Given I am at position
-     When  I press d
-     Then  I am at newPosition.x > position.x
-
-  Scenario Outline: Moving from start to position
-    Given I am at <start>
-    When  I press <key>
-    And   I press for <duration>
-    Then  I am at <position>
-
-    Examples: 
-      | start | key | duration | position |
-      | 0,0,0 |  w  |    00    |   0,0,0  |
-      | 0,0,0 |  a  |    00    |   0,0,0  |
-      | 0,0,0 |  s  |    00    |   0,0,0  |
-      | 0,0,0 |  d  |    00    |   0,0,0  |
-      | 0,0,0 |  w  |    05    |   0,0,10 |
-      | 0,0,0 |  a  |    05    | -10,0,0  |
-      | 0,0,0 |  s  |    05    |   0,0,-10|
-      | 0,0,0 |  d  |    05    |  10,0,0  |
 ```
 
 ## 2.2 Alternative Flows

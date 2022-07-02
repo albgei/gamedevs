@@ -1,10 +1,12 @@
 # 1 Force Movement
 
 ## 1.1 Brief Description
+Will move an entity away from the source of attack, if it has knockback.
 
 # 2 Flow of Events
 ## 2.1 Basic Flow
-- 
+- Entity takes Damage
+- If Attack has Knockback, move Entity away
 
 ### 2.1.1 Activity Diagram
 ![Accepting Quest Activity Diagram](https://albgei.github.io/gamedevs/UCs/UC8%20Activity%20Diagram.png)

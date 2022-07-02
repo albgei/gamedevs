@@ -110,14 +110,14 @@ This section will explain the different use cases, you could see in the Use Case
 Until December we plan to implement:
 - 3.1.1 Player Movement
 - 3.1.2 World Interaction
-- 3.1.3 Generating NPCs
-- 3.1.4 NPC Interaction
+- 3.1.3 NPC Movement
+- 3.1.4 Connect Rooms
 
 Until June, we want to implement:
-- 3.1.6 NPC Movement
-- 3.1.7 Generating Dungeons
-- 3.1.8 Accepting Quests
-- 3.1.9 
+- 3.1.5 NPC Decision Making
+- 3.1.6 Generating NPCs
+- 3.1.7 Attacking & Death
+- 3.1.8 Force Movement
 
 #### 3.1.1 Player Movement
 This will ensure that the Player will be able to execute basic movements such as walking up,down,left and right in order to explore the world.
@@ -130,36 +130,36 @@ This feature is to allow the player to interact with the surrounding world in va
 
 [World Interaction](./UCs/UC2_Main.md)
 
-#### 3.1.3 Generating NPCs
+#### 3.1.3 NPC Movement
 To generate friendly and hostile NPCs with default templates and the availability to add different capabilities for critical NPCs.
 
-[Generating NPCs](./UCs/UC3_Main.md)
+[NPC Movement](./UCs/UC3_Main.md)
 
-#### 3.1.4 NPC Interaction
+#### 3.1.4 Connect Rooms
 This will allow the player to interact with numerous NPCs in order to start dialogues or to give the NPC 
 the ability to interact with the world just like the player does.
 
-[NPC Interaction](./UCs/UC4_Main.md)
+[Connect Rooms](./UCs/UC4_Main.md)
 
-#### 3.1.5 Character Progression
+#### 3.1.5 NPC Decision Making
 To implement a RPG typical user interface to allow the player to upgrade their 
 characters statistics and to unlock new abilities aswell as equip the character with diverse items.
 
-[Character Progression](./UCs/UC5_Main.md)
+[NPC Decision Making](./UCs/UC5_Main.md)
 
-#### 3.1.6 NPC Movement
+#### 3.1.6 Generating NPCs
 Gives NPCs the ability to navigate the world and path find specific targets for example the player.
 
-[NPC Movement](./UCs/UC6_Main.md)
+[Generating NPCs](./UCs/UC6_Main.md)
 
-#### 3.1.7 Generating Dungeons
+#### 3.1.7 Attacking & Death
 To generate an instance dungeon from several assets and room layouts.
-[Generating Dungeons](./UCs/UC7_Main.md)
+[Attacking & Death](./UCs/UC7_Main.md)
 
-#### 3.1.8 Accepting Quests
+#### 3.1.8 Force Movement
 Will give the player the ability to accept and start various quests.
 
-[Accepting Quests](./UCs/UC8_Main.md)
+[Force Movement](./UCs/UC8_Main.md)
 
 ### 3.2 Usability
 We plan on designing a self explanatory game with a few ingame explanations to make sure that the player will be advised about the 

@@ -1,10 +1,12 @@
 # 1 Attacking & Death
 
 ## 1.1 Brief Description
+Entities will have Health, that decrements with each attack received. When Health reaches 0, the entity is removed/killed.
 
 # 2 Flow of Events
 ## 2.1 Basic Flow
-- 
+- Entity takes Damage
+- If Health = 0, remove Entity
 
 ### 2.1.1 Activity Diagram
 ![Generating Dungeon Activity Diagram](https://albgei.github.io/gamedevs/UCs/UC7%20Activity%20Diagram.png)

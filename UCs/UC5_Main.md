@@ -17,57 +17,29 @@ Allows the player to aquire experience points and level up.
 
 ### 2.1.3 Narrative
 ```gherkin
-@player @progression
-Feature: Acquiring experience points and leveling up.
+@npc @movement
+Feature: Finding target location
   Background:
-     Given  I am in a room
+     Given  I (NPC) am in a room
      And    Game is active
-     And    I am alive
-     
-  Scenario: Kill NPC
-     Given  I damage NPC
-     And    NPC dies
-     Then   I will receive experience points
-     
-  Scenario: Finish Quest
-     Given  I finish a quest
-     And    Quest was successful
-     Then   I will receive experience points
-     
-  Scenario: Enter new area
-     Given  I enter a area / room
-     And    I have not entered the area / room before
-     Then   I will receive experience points
+     And    There is no obstacle
 
-  Scenario: Enough experience points for level up
-     Given  I have received experience points
-     And    I have enough experience points for level up
-     Then   I will level up
+  Scenario: Target player
+     Given Player in detection range
+     When  I press noting
+     Then  set target player.position
 
-  Scenario: Not enough experience points for level up
-     Given  I have received experience points
-     And    I have not enough experience points for level up
-     Then   I will not level up
-     
-  Scenario Outline: Leveling up
-    Given I have <experience> points
-    And   I am <level>
-    When  I receive experience <points>
-    And   I have enough experience points <needed>
-    Then  I adjust my <new experience> points
-    And   I increment my <new level>
+  Scenario: not moving toward trigger
+     Given Player not in detection range
+     And   I do not have patrol point
+     When  I press noting
+     Then nothing
 
-    Examples: 
-      | experience | points | needed | level | new experience | new level |
-      |     000    |   00   |  020   |   1   |      000       |     1     |
-      |     000    |  -99   |  020   |   1   |      000       |     1     |
-      |     015    |  -99   |  020   |   1   |      015       |     1     |
-      |     000    |   05   |  020   |   1   |      005       |     1     |
-      |     015    |   00   |  020   |   1   |      015       |     1     |
-      |     015    |   05   |  020   |   1   |      000       |     2     |
-      |     015    |   15   |  020   |   1   |      010       |     2     |
-      |     020    |   00   |  020   |   1   |      000       |     2     |
-      |     020    |   05   |  020   |   1   |      005       |     2     |
+  Scenario: Target patrol point
+     Given Player not in detection range
+     And   I have patrol point
+     When  I press noting
+     Then  set target patrol point.position
 ```
 
 ## 2.2 Alternative Flows

@@ -120,44 +120,42 @@ Until June, we want to implement:
 - 3.1.8 Force Movement
 
 #### 3.1.1 Player Movement
-This will ensure that the Player will be able to execute basic movements such as walking up,down,left and right in order to explore the world.
-These controls will be explained at the start of the game.
+This will ensure that the Player will be able to execute basic movements such as walking up, down, left and right in order to explore the world.
 
 [Player Movement](./UCs/UC1_Main.md)
 
 #### 3.1.2 World Interaction
-This feature is to allow the player to interact with the surrounding world in various means, for example attack, defend or read signs.
+This feature is to allow the player to interact with the surrounding world in various means, for example read signs or open chests.
 
 [World Interaction](./UCs/UC2_Main.md)
 
 #### 3.1.3 NPC Movement
-To generate friendly and hostile NPCs with default templates and the availability to add different capabilities for critical NPCs.
+This will ensure that the NPC will be able to execute basic movements such as walking up, down, left and right.
 
 [NPC Movement](./UCs/UC3_Main.md)
 
 #### 3.1.4 Connect Rooms
-This will allow the player to interact with numerous NPCs in order to start dialogues or to give the NPC 
-the ability to interact with the world just like the player does.
+This will allow the player to move between different areas called rooms by moving into the entering zone.
 
 [Connect Rooms](./UCs/UC4_Main.md)
 
 #### 3.1.5 NPC Decision Making
-To implement a RPG typical user interface to allow the player to upgrade their 
-characters statistics and to unlock new abilities aswell as equip the character with diverse items.
+Gives NPCs the ability to navigate the world and path find specific targets, for example the player.
 
 [NPC Decision Making](./UCs/UC5_Main.md)
 
 #### 3.1.6 Generating NPCs
-Gives NPCs the ability to navigate the world and path find specific targets for example the player.
+To generate friendly and hostile NPCs with default templates and the availability to add different capabilities for critical NPCs.
 
 [Generating NPCs](./UCs/UC6_Main.md)
 
 #### 3.1.7 Attacking & Death
-To generate an instance dungeon from several assets and room layouts.
+Entities will have Health, that decrements with each attack received. When Health reaches 0, the entity is removed/killed.
+
 [Attacking & Death](./UCs/UC7_Main.md)
 
 #### 3.1.8 Force Movement
-Will give the player the ability to accept and start various quests.
+Will move an entity away from the source of attack, if it has knockback.
 
 [Force Movement](./UCs/UC8_Main.md)
 

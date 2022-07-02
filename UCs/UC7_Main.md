@@ -1,4 +1,4 @@
-# 1 Generating Dungeon
+# 1 Attacking & Death
 
 ## 1.1 Brief Description
 

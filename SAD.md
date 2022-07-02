@@ -13,13 +13,13 @@ This document describes the architecture of the Art+Game Project.
 ### 1.3 Definitions, Acronyms, and Abbreviations
 
 | **Abbreviation** | |
-| ---------------- | -------------- |
+|----------------|--------------|
 | N/A | Not applicable |
 
 ### 1.4 References
 
 | **Title** |
-| ----------------------------------------------------------------------------- |
+|-----------------------------------------------------------------------------|
 | [**Art+Game Blog**](https://albgei.github.io/gamedevs/) |
 | [**Software Requirements Specification**](https://albgei.github.io/gamedevs/SRS) |
 

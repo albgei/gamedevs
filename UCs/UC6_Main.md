@@ -1,4 +1,4 @@
-# 1 Generating NPC
+# 1 Generating NPCs
 
 ## 1.1 Brief Description
 

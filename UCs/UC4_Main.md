@@ -1,11 +1,11 @@
 # 1 Connect Rooms
 
 ## 1.1 Brief Description
-Allows the NPC to interact with interactables which implement the interactable interface.
+This will allow the player to move between different areas called rooms by moving into the entering zone.
 
 # 2 Flow of Events
 ## 2.1 Basic Flow
-- if interactable infront of NPC, trigger interaction
+- if player in entering zone, move player to next room.
 
 ### 2.1.1 Activity Diagram
 ![NPC Interaction Activity Diagram](https://albgei.github.io/gamedevs/UCs/UC4%20Activity%20Diagram.png)

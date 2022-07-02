@@ -14,54 +14,22 @@
 
 ### 2.1.3 Narrative
 ```gherkin
-@player @movement
-Feature: Moving based on user input
+@npc @generation
+Feature: generating NPC
   Background:
-     Given  I am in a room
-     And    Game is active
-     And    There is no obstacle
+     Given  Game is active
 
-  Scenario: not moving
-     Given I am at position
+  Scenario: spawn NPC in new room
+     Given NPC spawnpoint in room A
+     And   I (player) enter room A
      When  I press noting
-     Then  I am at position
-
-  Scenario: Moving up
-     Given I am at position
-     When  I press w
-     Then  I am at newPosition.z > position.z
-
-  Scenario: Moving left
-     Given I am at position
-     When  I press a
-     Then  I am at newPosition.x < position.x
-
-  Scenario: Moving down
-     Given I am at position
-     When  I press s
-     Then  I am at newPosition.z < position.z
-
-  Scenario: Moving right
-     Given I am at position
-     When  I press d
-     Then  I am at newPosition.x > position.x
-
-  Scenario Outline: Moving from start to position
-    Given I am at <start>
-    When  I press <key>
-    And   I press for <duration>
-    Then  I am at <position>
-
-    Examples: 
-      | start | key | duration | position |
-      | 0,0,0 |  w  |    00    |   0,0,0  |
-      | 0,0,0 |  a  |    00    |   0,0,0  |
-      | 0,0,0 |  s  |    00    |   0,0,0  |
-      | 0,0,0 |  d  |    00    |   0,0,0  |
-      | 0,0,0 |  w  |    05    |   0,0,10 |
-      | 0,0,0 |  a  |    05    | -10,0,0  |
-      | 0,0,0 |  s  |    05    |   0,0,-10|
-      | 0,0,0 |  d  |    05    |  10,0,0  |
+     Then  spawn NPC
+     
+ Scenario: spawn NPC in spawn zone
+     Given NPC spawn zone in room A
+     And   I (player) am in room A
+     When  Timer hits zero
+     Then  spawn NPC
 ```
 
 ## 2.2 Alternative Flows

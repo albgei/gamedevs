@@ -22,7 +22,7 @@ This document is meant for internal use primarily.
 - **tbd**	to be determined
 
 ### 1.5	 References
-| Reference        | 
+| Reference |
 | ------------- |
 | [SAD](https://albgei.github.io/gamedevs/SAD) | 
 | [UseCases (Kinda)](https://albgei.github.io/gamedevs/blog-2021-12-09) |
@@ -60,14 +60,14 @@ n/a
 **n/a**
 ### 5.2	Testing Techniques and Types
 #### 5.2.1 Game Testing
-|| |
+| | |
 |---|---|
-|Technique Objective  	| Test the game. |
-|Technique 		| Data should be mocked. |
-|Oracles 		| Endpoints return the correct and expected data as well as the expected response codes. |
-|Required Tools 	| Unity Testing Framework |
-|Success Criteria	| Expected behavior and passing tests |
-|Special Considerations	|     -          |
+|Technique Objective | Test the game. |
+| Technique | Data should be mocked. |
+| Oracles | Endpoints return the correct and expected data as well as the expected response codes. |
+| Required Tools | Unity Testing Framework |
+| Success Criteria | Expected behavior and passing tests |
+| Special Considerations | - |
 
 #### 5.2.2 Fun Testing
 **n/a**

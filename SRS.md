@@ -44,13 +44,8 @@ The player will be able to move around freely in a "vast and rich" open world. D
 and allies aswell as various main- and sidequests.
 * Quest System:
 Tracks the progress of the quest progression and auto-generates repeatables.
-* Storing Data:  
-User data for accounts and possibly profiles must be stored. In addition, the game session must be stored as a data set containing form content and possible contact data. Data storage will form the basis of visualization, account systems and search functions.
-* Progression System:  
-According to your level ingame, the enemys will get stronger and harder to beat. This way it can be ensured that the start will not be too hard and you dont
-just steamroll the endgame.
-* Character Development System:
-During the game the player will be able to level up and improve their characters abilitys and statistics.
+* Storing Data:
+The game session must be stored as a data set containing form content and possible contact data. Data storage will form the basis of visualization, account systems and search functions.
 
 ### 1.3 Definitions, Acronyms and Abbreviations
 | Abbrevation | Explanation                            |
@@ -117,7 +112,6 @@ Until December we plan to implement:
 - 3.1.2 World Interaction
 - 3.1.3 Generating NPCs
 - 3.1.4 NPC Interaction
-- 3.1.5 Character Progression
 
 Until June, we want to implement:
 - 3.1.6 NPC Movement

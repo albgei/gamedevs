@@ -1,4 +1,4 @@
-# 1 NPC Interaction
+# 1 Connect Rooms
 
 ## 1.1 Brief Description
 Allows the NPC to interact with interactables which implement the interactable interface.

@@ -48,21 +48,21 @@ Tracks the progress of the quest progression and auto-generates repeatables.
 The game session must be stored as a data set containing form content and possible contact data. Data storage will form the basis of visualization, account systems and search functions.
 
 ### 1.3 Definitions, Acronyms and Abbreviations
-| Abbrevation | Explanation                            |
+| Abbrevation | Explanation |
 | ----------- | -------------------------------------- |
-| SRS         | Software Requirements Specification    |
-| UC          | Use Case                               |
-| n/a         | not applicable                         |
-| tba         | to be announced	                       |
-| UCD         | overall Use Case Diagram               |
-| FAQ         | Frequently asked Questions             |
+| SRS | Software Requirements Specification |
+| UC | Use Case |
+| n/a | not applicable |
+| tba | to be announced |
+| UCD | overall Use Case Diagram |
+| FAQ | Frequently asked Questions |
 
 ### 1.4 References
 
-| Title                                                              | Date       | Publishing organization   |
-| -------------------------------------------------------------------|:----------:| ------------------------- |
-| [Art+Game Blog](https://github.com/albgei/gamedevs/index)          | 21.10.2021 | Art+Game Team    	      |
-| [GitHub](https://github.com/albgei/gamedevs)		             | 21.10.2021 | Art+Game Team   	      |
+| Title | Date | Publishing organization |
+| ------------------------------------------------------------------- | :----------: | ------------------------- |
+| [Art+Game Blog](https://github.com/albgei/gamedevs/index) | 21.10.2021 | Art+Game Team |
+| [GitHub](https://github.com/albgei/gamedevs) | 21.10.2021 | Art+Game Team |
 
 
 ### 1.5 Overview

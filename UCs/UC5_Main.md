@@ -1,13 +1,13 @@
 # 1 NPC Decision Making
 
 ## 1.1 Brief Description
-Allows the player to aquire experience points and level up. 
+Gives NPCs the ability to navigate the world and path find specific targets, for example the player.
 
 # 2 Flow of Events
 ## 2.1 Basic Flow
-- Player does something
-- Doing so gives the player experience points
-- Given enough experience points, the player levels up
+- If player in detection range
+- set target
+- move to target
 
 ### 2.1.1 Activity Diagram
 ![NPC Interaction Activity Diagram](https://albgei.github.io/gamedevs/UCs/UC5%20Activity%20Diagram.png)

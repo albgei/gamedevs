@@ -23,7 +23,7 @@ This document is meant for internal use primarily.
 
 ### 1.5	 References
 | Reference |
-| ------------- |
+|---|
 | [SAD](https://albgei.github.io/gamedevs/SAD) | 
 | [UseCases (Kinda)](https://albgei.github.io/gamedevs/blog-2021-12-09) |
             
@@ -67,7 +67,7 @@ n/a
 | Oracles | Endpoints return the correct and expected data as well as the expected response codes. |
 | Required Tools | Unity Testing Framework |
 | Success Criteria | Expected behavior and passing tests |
-| Special Considerations | - |
+| Special Considerations | |
 
 #### 5.2.2 Fun Testing
 **n/a**

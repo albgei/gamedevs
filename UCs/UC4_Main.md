@@ -15,31 +15,30 @@ Allows the NPC to interact with interactables which implement the interactable i
 
 ### 2.1.3 Narrative
 ```gherkin
-@npc @interaction
-Feature: Interact with a Interactable
+@player @movement
+Feature: Moving to a new Room
   Background:
-    Given   I (NPC) am facing direction
-    And     Interaction is desired
+     Given  I am in a room
+     And    Game is active
+     And    There is a room change trigger
 
-  Scenario: Interact with interactable
-    Given   Interactable is in direction
-    And     Interactable is within reach
-    Then    Trigger interaction event
+  Scenario: not moving
+     Given I am at position
+     When  I press noting
+     Then  nothing
 
-  Scenario: Interactable out of reach
-    Given   Interactable is in direction
-    And     Interactable is out of reach
-    Then    nothing
+  Scenario: not moving toward trigger
+     Given I am at position
+     When  I press w/a/s/d
+     And  I am at newPosition != trigger.position
+     Then nothing
 
-  Scenario: Interactable is not in direction
-    Given   Interactable is not in direction
-    And     Interactable is within reach
-    Then    nothing
+  Scenario: moving toward trigger
+     Given I am at position
+     When  I press w/a/s/d
+     And  I am at newPosition = trigger.position
+     Then change location to new room
 
-  Scenario: Interactable is somewhere else
-    Given   Interactable is not in direction
-    And     Interactable is out of reach
-    Then    nothing
 ```
 
 ## 2.2 Alternative Flows
